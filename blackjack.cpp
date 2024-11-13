@@ -152,6 +152,7 @@ int main() {
 	int  ManoCasa[12];
 	int  CartasJugador = 0;
 	int  ManoJugador[12];
+	int continuarJuego;
 
 	// Inicia un bucle para cada mano
 	while (true) {
@@ -234,7 +235,14 @@ int main() {
 					ImprimirEnConsola(ManoCasa, CartasCasa, ManoJugador, CartasJugador);
 				}
 			}
-		}
+		} 
+		// Preguntar si desea jugar otra ronda o terminar el juego
+char respuesta;
+cout << "¿Quieres jugar otra partida? (s/n): ";
+cin >> respuesta;
+if (respuesta == 'n' || respuesta == 'N') {
+    continuarJuego = false;
+}
 	}
 	return 0;
 }
