@@ -241,7 +241,7 @@ char respuesta;
 cout << "¿Quieres jugar otra partida? (s/n): ";
 cin >> respuesta;
 if (respuesta == 'n' || respuesta == 'N') {
-    continuarJuego = false;
+    break;
 }
 	}
 	return 0;
